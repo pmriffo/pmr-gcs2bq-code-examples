@@ -1,0 +1,15 @@
+env
+*.pyc
+__pycache__
+.pytest_cache
+.dockerignore
+Dockerfile
+.git
+.hg
+.svn
+*.pyc
+*.pyo
+*.pyd
+README.md
+key.json
+test
