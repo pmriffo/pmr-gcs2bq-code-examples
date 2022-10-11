@@ -21,7 +21,7 @@ steps:
       echo "***********************"
       echo "project   : $PROJECT_ID"
       echo "***********************"
-      cd iac/init
+      cd init
       chmod +x init.sh
       ./init.sh ${PROJECT_ID}
 
@@ -32,7 +32,7 @@ steps:
   args:
     - '-c'
     - |
-      cat iac/backend.tfvars 
-      terraform init -input=false -no-color -upgrade -backend-config=iac/backend.tfvars 
+      cat init/backend.tfvars 
+      terraform init -input=false -no-color -upgrade -backend-config=init/backend.tfvars 
 # [END tf-init]
 timeout: 5400s
